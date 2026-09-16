@@ -1,0 +1,166 @@
+.search-result {
+    min-height: calc(100vh - 50px);
+    background-color: #f7f7f7;
+    padding: 40px 0 60px;
+}
+
+.search-reault__inner {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*==============
+　　タイトル
+==============*/
+.search-result__title {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-result__body {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+/*=================
+　　検索
+================*/
+.search {
+    width: 135px;
+    flex-shrink: 0;
+}
+
+.search__name input {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.search__name input::placeholder {
+    color: #ccc;
+}
+
+/*=================
+　　検索ボタン
+=================*/
+.search__name button {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f5c400;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/*===============
+　　価格順
+===============*/
+.search__price {
+    margin-top: 25px;
+}
+
+.search__price label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+}
+
+.search__price select {
+    width: 100%;
+    height: 32px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #999;
+    font-size: 10px;
+}
+
+.search-result__right {
+    flex: 1;
+}
+
+/*===============
+　　商品一覧
+===============*/
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+/*==============
+　　商品カード 
+===============*/
+.product-card {
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #555;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+}
+
+.product-card__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.product-card__info {
+    height: 38px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.product-card__name {
+    font-size: 13px;
+}
+
+.product-card__price {
+    font-size: 13px;
+}
+
+/*===============
+　　商品がない場合
+=================*/
+.no-result {
+    margin: 20px 0;
+    color: #777;
+    font-size: 13px;
+}
+
+/*==================
+　　ページネーション
+====================*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+

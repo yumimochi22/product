@@ -1,0 +1,147 @@
+.product-create {
+    background-color:#f7f7f7;
+    min-height: calc(100vh - 50px);
+    padding: 40px 0;
+}
+
+.product-create__inner {
+    width: 50%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.product-create__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* フォーム */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group > label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+} 
+
+/* 必須 */
+.required {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 2px 5px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 10px;
+}
+
+/* 複数選択可 */
+.multiple {
+    margin-left: 5px;
+    color: #f44336;
+    font-size: 11px;
+}
+
+/* 入力欄 */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    height: 35px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;   
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ddd;
+}
+
+/* 画像 */
+input[type="file"] {
+    font-size: 12px;
+}
+
+/* 季節 */
+.season-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.season-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.season-item input[type="checkbox"] {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0;
+}
+
+.season-item input[type="checkbox"]:checked {
+    background-color: #8b7969;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* 商品説明 */
+textarea {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    resize: none;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* ボタン */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.back-button,
+.submit-button {
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.back-button {
+    background-color: #ddd;
+    color: #555;
+}
+
+.submit-button {
+    background-color: #f5c400;
+    color: #fff;
+    cursor: pointer;
+}
+
+.error {
+    margin: 5px 0 0;
+    color: #ff0000;
+    font-size: 12px;
+}

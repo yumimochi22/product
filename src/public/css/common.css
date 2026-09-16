@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #555;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+}
+
+/*================
+　　ヘッダー
+================*/
+.header {
+    height: 50px;
+    background-color: #fff;
+    border-top: 4px solid #000;
+    border-bottom: 1px solid #eee;
+}
+
+.header__inner {
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+/*================
+　　ロゴ
+================*/
+.logo {
+    color: #f5c400;
+    font-family: serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
